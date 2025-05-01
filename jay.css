@@ -1,0 +1,76 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+              url('https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: url('549a1a20-3b88-4183-8778-58a06e47b5d4.png') no-repeat center center/cover;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0);
+  text-align: center;
+  width: 500px; /* increased width */
+  color: white;
+  backdrop-filter: blur(3px);
+}
+
+.logo {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+input[type="password"] {
+  padding: 12px;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#strength {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 15px;
+  text-align: left;
+}
+
+
+.container > div:first-child span {
+    float: right;
+    color: white;
+    transition: transform 0.2s ease;
+  }
+  
+  .container > div:first-child span:hover {
+    transform: rotate(90deg);
+    color: #ffcc00;
+  }
+  

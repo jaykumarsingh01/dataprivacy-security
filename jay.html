@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Password Strength Checker</title>
+  <link rel="stylesheet" href="jay.css" />
+</head>
+<body>
+  <div class="container">
+    <div style="text-align: right;">
+        <span onclick="refreshPage()" title="Refresh" style="cursor: pointer; font-size: 22px; margin-left: 10px;">🔄</span>
+        <span onclick="showNextHistory()" title="Show Password History" style="cursor: pointer; font-size: 20px; margin-left: 10px;">📜</span>
+      </div>
+      
+      
+
+
+    <img src="https://upload.wikimedia.org/wikipedia/en/c/c0/Gautam_Buddha_University_logo.jpg" alt="Logo" class="logo" />
+    <h2>Password Strength Checker</h2>
+
+    <div id="criteria" style="text-align: left; margin-top: 15px;">
+        <label><input type="checkbox" id="includeUppercase" checked> Include Uppercase</label><br>
+        <label><input type="checkbox" id="includeNumbers" checked> Include Numbers</label><br>
+        <label><input type="checkbox" id="includeSymbols" checked> Include Symbols</label>
+      </div>
+      
+    
+    <input type="password" id="password" placeholder="Enter Password" />
+    <button onclick="checkStrength()">Check Strength</button>
+    <button onclick="savePassword()">Save Password</button>
+    <button onclick="generatePassword()">Generate Password</button>
+    <button onclick="copyPassword()">Copy</button>
+    <p id="generated-password" style="margin-top: 10px; font-size: 16px; font-weight: bold;"></p>
+
+    
+    <div id="strength"></div>
+    <ul id="feedback"></ul>
+  </div>
+
+  <script type="module" src="jay.js"></script>
+
+  <div style="text-align: center; margin-top: 10px;">
+    <p id="history-display" style="font-weight: bold; font-size: 14px;"></p>
+  </div>
+  
+</body>
+</html>
